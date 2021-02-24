@@ -8,7 +8,7 @@ h1 {
     font-family:"Rancho", serif;
     font-size:60px;
     color:cadetblue;
-    background-image: url("../../../img/background-h1.jpg");
+    
     opacity: 0.9;
     margin: 0;
     padding: 0;
@@ -55,40 +55,46 @@ div.passato, div.presente, div.futuro {
 
 div.passato {
     background-color:slategrey;
-    
-}
-
-div.passato:hover {
     background: url("../../../img/passato.jpg");
     background-repeat: no-repeat;
     background-size:cover;
+}
+
+div.presente {
+    background-color:rgb(53, 42, 32);
+    background-image: url("../../../img/presente.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+div.futuro {
+    background-color:rgb(53, 42, 32);
+    background-image: url("../../../img/futuro.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+div.passato:hover {
+    
     animation: animation 1.5s ease-in-out ;
     background-repeat:unset
 }
 
 div.presente:hover {
-    background-image: url("../../../img/presente.jpg");
-    background-repeat: no-repeat;
-    background-size:cover;
+    
     animation: animation 1.5s ease-in-out ;
     background-repeat:unset
 }
 
 div.futuro:hover {
-    background-image: url("../../../img/futuro.jpg");
-    background-repeat: no-repeat;
-    background-size:cover;
+    
     animation: animation 1.5s ease-in-out ;
     background-repeat:unset
 }
 
-div.presente {
-    background-color:blue
-}
 
-div.futuro {
-    background-color:deeppink;
-}
+
+
 
 div.passato:hover, div.presente:hover, div.futuro:hover {
     opacity: 1;
