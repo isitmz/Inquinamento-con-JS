@@ -8,7 +8,7 @@ h1 {
     font-family:"Rancho", serif;
     font-size:60px;
     color:cadetblue;
-    background-image: url("../../img/background-h1.jpg");
+    background-image: url("../../../img/background-h1.jpg");
     opacity: 0.9;
     margin: 0;
     padding: 0;
@@ -59,7 +59,7 @@ div.passato {
 }
 
 div.passato:hover {
-    background: url("../../img/passato.jpg");
+    background: url("../../../img/passato.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     animation: animation 1.5s ease-in-out ;
@@ -67,7 +67,15 @@ div.passato:hover {
 }
 
 div.presente:hover {
-    background-image: url("../../img/presente.jpg");
+    background-image: url("../../../img/presente.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    animation: animation 1.5s ease-in-out ;
+    background-repeat:unset
+}
+
+div.futuro:hover {
+    background-image: url("../../../img/futuro.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     animation: animation 1.5s ease-in-out ;
