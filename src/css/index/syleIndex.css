@@ -22,6 +22,10 @@ p {
     text-transform: uppercase;
 }
 
+.text-animation .letter {
+    display:inline-block;
+  }
+
 * {
     margin: 0;
     padding: 0;
