@@ -7,21 +7,28 @@ body {
 h1 {
     font-family:"Rancho", serif;
     font-size:60px;
-    color:cadetblue;
-    
-    opacity: 0.9;
-    margin: 0;
-    padding: 0;
+    color:#000;
+    text-transform: uppercase;
 }
 
 p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: x-large;
+    font-size: 90px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    text-transform: uppercase;
 }
 
 * {
+    margin: 0;
+    padding: 0;
+
     box-sizing: border-box;
-  }
+}
+  
 
 div.container {
 
@@ -50,11 +57,12 @@ div.passato, div.presente, div.futuro {
     justify-content: center;
     align-items: center;
     opacity: 0.4;
+    position:relative
     /*margin: 5px 5px 5px 5px;*/
 }
 
 div.passato {
-    background-color:slategrey;
+    background-color:rgb(53, 42, 32);
     background: url("../../../img/passato.jpg");
     background-repeat: no-repeat;
     background-size:cover;
@@ -62,39 +70,38 @@ div.passato {
 
 div.presente {
     background-color:rgb(53, 42, 32);
-    background-image: url("../../../img/presente.jpg");
+    /*background-image: url("../../../img/presente.jpg");*/
     background-repeat: no-repeat;
     background-size:cover;
 }
 
 div.futuro {
-    background-color:rgb(53, 42, 32);
-    background-image: url("../../../img/futuro.jpg");
+    background-color:rgb(90, 71, 53);
+    /*background-image: url("../../../img/futuro.jpg");*/
     background-repeat: no-repeat;
     background-size:cover;
 }
 
 div.passato:hover {
-    
+    background: url("../../../img/passato.jpg");
     animation: animation 1.5s ease-in-out ;
-    background-repeat:unset
+    background-size: cover;
+    background-repeat: unset;
 }
 
 div.presente:hover {
-    
+    background-image: url("../../../img/presente.jpg");
     animation: animation 1.5s ease-in-out ;
-    background-repeat:unset
+    background-size: cover;
+    background-repeat: unset;
 }
 
 div.futuro:hover {
-    
+    background-image: url("../../../img/futuro.jpg");
     animation: animation 1.5s ease-in-out ;
-    background-repeat:unset
+    background-size: cover;
+    background-repeat: unset;
 }
-
-
-
-
 
 div.passato:hover, div.presente:hover, div.futuro:hover {
     opacity: 1;
