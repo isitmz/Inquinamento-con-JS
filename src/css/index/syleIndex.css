@@ -1,45 +1,66 @@
 body {
-    background: linear-gradient(45deg, beige, azure);
+    background: linear-gradient(45deg, #43C6AC,#191654);
     background-repeat: no-repeat;
     background-size:cover;
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
     font-family:"Rancho", serif;
     font-size:60px;
-    color:#000;
+    color:azure;
     text-transform: uppercase;
+    opacity: 0.5;
 }
 
-p {
+#paragraph1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 90px;
+    font-size: 50px;
     display: flex;
     text-align: center;
     justify-content: center;
     writing-mode: vertical-rl;
     text-orientation: upright;
     text-transform: uppercase;
+    color: aliceblue;
+    opacity: 0;
+}  
+
+#paragraph2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    text-transform: uppercase;
+    color: aliceblue;
+    opacity: 0;
 }
 
-.text-animation .letter {
-    display:inline-block;
-  }
-
-* {
-    margin: 0;
-    padding: 0;
-
-    box-sizing: border-box;
+#paragraph3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    text-transform: uppercase;
+    color: aliceblue;
+    opacity: 0;
 }
-  
 
 div.container {
-
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     width: 100%;
-    height: 885px;
-    
+    height: 100%;
+    display: table;
 }
 
 div.container::after {
@@ -54,36 +75,36 @@ div {
 
 div.passato, div.presente, div.futuro {
     float: left;
-    width: 33.33%;
-    padding: 10px;
-    height: 100%;
+    width: 32.67%;
+    height: 690px;
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0.4;
-    position:relative
-    /*margin: 5px 5px 5px 5px;*/
+    opacity: 0.2;
+    position:static;
+    margin: 5px 5px 5px 5px;
+    background-color: #000;
 }
 
 div.passato {
-    background-color:rgb(53, 42, 32);
-    background: url("../../../img/passato.jpg");
+    /*background: url("../../../img/passato.jpg");*/
     background-repeat: no-repeat;
     background-size:cover;
+    border-radius: 0px 100px 100px 0px;
 }
 
 div.presente {
-    background-color:rgb(53, 42, 32);
     /*background-image: url("../../../img/presente.jpg");*/
     background-repeat: no-repeat;
     background-size:cover;
+    border-radius: 200px 200px 200px 200px;
 }
 
 div.futuro {
-    background-color:rgb(90, 71, 53);
     /*background-image: url("../../../img/futuro.jpg");*/
     background-repeat: no-repeat;
     background-size:cover;
+    border-radius: 100px 0px 0px 100px;
 }
 
 div.passato:hover {
@@ -107,18 +128,49 @@ div.futuro:hover {
     background-repeat: unset;
 }
 
-div.passato:hover, div.presente:hover, div.futuro:hover {
-    opacity: 1;
+div.passato:hover #paragraph1 {
+    animation: fadeIn ease 1s;
+    animation-fill-mode: forwards; 
 }
 
-li a {
-    width: 100%;
-    display: block;
-    text-decoration: none;
+div.presente:hover #paragraph2 {
+    animation: fadeIn ease 1s;
+    animation-fill-mode: forwards; 
+}
+
+div.futuro:hover #paragraph3 {
+    animation: fadeIn ease 1s;
+    animation-fill-mode: forwards; 
+}
+
+div.passato:hover, div.presente:hover, div.futuro:hover {
+    opacity: 0.8;
+    background: cover unset;
+}
+
+footer {
+    background: #000;
+    opacity: 0.4;
+    margin-top: 5px ;
+    height: 100px;
+}
+
+.footer {
+    opacity: 1;
+    color:aliceblue;
 }
 
 @keyframes animation {
     100%{
-     background-position: 0px -885px;
+     background-position: 0px -690px;
    }
+ }
+
+ @keyframes fadeIn {
+     0% {
+         opacity: 0;
+     }
+     100% {
+         opacity: 1;
+     }
  }
