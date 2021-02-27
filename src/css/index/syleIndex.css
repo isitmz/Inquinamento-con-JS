@@ -1,7 +1,19 @@
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
 body {
     background: linear-gradient(45deg, #43C6AC,#191654);
-    background-repeat: no-repeat;
     background-size:cover;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
 }
 
 * {
@@ -17,7 +29,7 @@ h1 {
     opacity: 0.5;
 }
 
-#paragraph1 {
+#paragraph1, #paragraph2, #paragraph3 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 50px;
     display: flex;
@@ -26,143 +38,99 @@ h1 {
     writing-mode: vertical-rl;
     text-orientation: upright;
     text-transform: uppercase;
-    color: aliceblue;
-    opacity: 0;
-}  
-
-#paragraph2 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 50px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    text-transform: uppercase;
-    color: aliceblue;
-    opacity: 0;
-}
-
-#paragraph3 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 50px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    text-transform: uppercase;
-    color: aliceblue;
+    color: azure;
     opacity: 0;
 }
 
 div.container {
     /*border: 1px solid red;*/
     width: 100%;
-    height: 100%;
-    display: table;
-}
-
-div.container::after {
-    content: "";
-    display: table;
-    clear: both;
+    height: 80%;
 }
 
 div {
     /*border: 1px solid red;*/
 }
 
-div.passato, div.presente, div.futuro {
+
+.passato {
+    /*background: url("../../../img/passato.jpg");*/
+    border-radius: 0px 100px 100px 0px;
+   
+}
+
+.presente {
+    /*background-image: url("../../../img/presente.jpg");*/
+    border-radius: 200px 200px 200px 200px;
+    background-size: cover;
+}
+
+.futuro {
+    /*background-image: url("../../../img/futuro.jpg");*/
+    border-radius: 100px 0px 0px 100px;
+    background-size: cover;
+}
+
+.passato, .presente, .futuro {
+    background-size: cover;
     float: left;
     width: 32.67%;
-    height: 690px;
+    height: 95%;
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: 0.2;
-    position:static;
     margin: 5px 5px 5px 5px;
-    background-color: #000;
+    background: #000 repeat-y;
+    overflow: hidden;
+    box-shadow:0 0 50px #000;
+    transition: opacity 0.5s ease;
 }
 
-div.passato {
-    /*background: url("../../../img/passato.jpg");*/
-    background-repeat: no-repeat;
-    background-size:cover;
-    border-radius: 0px 100px 100px 0px;
-}
-
-div.presente {
-    /*background-image: url("../../../img/presente.jpg");*/
-    background-repeat: no-repeat;
-    background-size:cover;
-    border-radius: 200px 200px 200px 200px;
-}
-
-div.futuro {
-    /*background-image: url("../../../img/futuro.jpg");*/
-    background-repeat: no-repeat;
-    background-size:cover;
-    border-radius: 100px 0px 0px 100px;
-}
 
 div.passato:hover {
-    background: url("../../../img/passato.jpg");
-    animation: animation 1.5s ease-in-out ;
     background-size: cover;
-    background-repeat: unset;
+    background: url("../../../img/passato.jpg");
 }
 
 div.presente:hover {
-    background-image: url("../../../img/presente.jpg");
-    animation: animation 1.5s ease-in-out ;
     background-size: cover;
-    background-repeat: unset;
+    background-image: url("../../../img/presente.jpg");
 }
 
 div.futuro:hover {
-    background-image: url("../../../img/futuro.jpg");
-    animation: animation 1.5s ease-in-out ;
     background-size: cover;
-    background-repeat: unset;
+    background-image: url("../../../img/futuro.jpg");
 }
 
-div.passato:hover #paragraph1 {
-    animation: fadeIn ease 1s;
-    animation-fill-mode: forwards; 
-}
-
-div.presente:hover #paragraph2 {
-    animation: fadeIn ease 1s;
-    animation-fill-mode: forwards; 
-}
-
-div.futuro:hover #paragraph3 {
+div.passato:hover #paragraph1, div.presente:hover #paragraph2, div.futuro:hover #paragraph3{
     animation: fadeIn ease 1s;
     animation-fill-mode: forwards; 
 }
 
 div.passato:hover, div.presente:hover, div.futuro:hover {
     opacity: 0.8;
-    background: cover unset;
+    animation: fadeIn ease-in 1s;
+    animation-fill-mode: forwards; 
 }
 
 footer {
     background: #000;
     opacity: 0.4;
-    margin-top: 5px ;
-    height: 100px;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
-.footer {
+.pfooter {
     opacity: 1;
     color:aliceblue;
 }
 
 @keyframes animation {
-    100%{
-     background-position: 0px -690px;
+    100% {
+     background-position: 0px -700px;
    }
  }
 
@@ -174,3 +142,12 @@ footer {
          opacity: 1;
      }
  }
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
