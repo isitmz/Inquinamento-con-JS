@@ -1,0 +1,88 @@
+body{
+    background: linear-gradient(45deg, #43C6AC,#191654); /*DA FIXARE IL COLORE*/
+    background-size:cover;
+    color: azure;
+    font-size: 18px;
+}
+
+div, header, section{
+    /*border: 1px solid red;*/
+    padding: 2px;
+}
+
+h1{
+    font-weight: normal;
+}
+
+h1, h2, p, ul{
+    padding: 0;
+    margin: 0;
+}
+
+h2{
+    margin-bottom: 4px;
+}
+
+div, header{
+    margin-bottom: 10px;
+}
+
+/*Inzio index*/
+
+.index{
+    text-align: center;
+}
+
+.index li{
+    display: inline;
+}
+
+.index li a{
+    text-decoration: none;
+    color: azure;
+    font-size: 28px;
+    padding: 0 20px 0 20px;
+}
+
+.index li a:hover:not(.active) {
+    color: rgb(219, 231, 231);
+}
+
+.index li .active{
+    color: rgb(181, 231, 231);
+}
+
+/*Fine index, inzio header*/
+
+header{
+    font-size: 28px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    overflow: auto;
+    position: relative;
+    padding: 10px;
+}
+
+section p{
+    width: 60%;
+    /*border: solid 1px brown;*/
+}
+
+section img{
+    width: 280px;
+}
+
+.uno p{
+    margin-right: 100px;
+    float: left;
+}
+
+.due p{
+    float: right;
+    margin-right: 200px;
+}
