@@ -23,6 +23,10 @@ p, h1, h2, h3, ul {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+div:not(.imgs) {
+    background: rgba(0,0,0,0.3);
+}
+
 /*  Fine    */
 .index{
     padding: 10px;

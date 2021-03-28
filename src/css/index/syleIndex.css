@@ -116,11 +116,21 @@ div.passato:hover, div.presente:hover, div.futuro:hover {
 
 footer {
     background: #000;
-    opacity: 0.4;
     height: 20%;
     display: flex;
     justify-content: center;
     text-align: center;
+}
+
+footer img{
+    width: 40px;
+    height: 40px;
+    margin: 8px 10px;
+}
+
+footer a{
+    text-decoration: none;
+    padding: 0;
 }
 
 .pfooter {

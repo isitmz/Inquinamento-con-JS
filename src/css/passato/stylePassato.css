@@ -23,6 +23,10 @@ p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+div:not(.imgs) {
+    background: rgba(0,0,0,0.3);
+}
+
 a:hover {
     opacity: 0.9;
 }

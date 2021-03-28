@@ -19,6 +19,14 @@ h1, h2, h3, p, ul{
     font-weight: normal;
 }
 
+div:not(.imgs) {
+    background: rgba(0,0,0,0.3);
+}
+
+a:visited {
+    color: azure;
+}
+
 p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
