@@ -19,6 +19,10 @@ h1, h2, h3, p, ul{
     font-weight: normal;
 }
 
+p, h1, h2, h3, ul {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 /*  Fine    */
 .index{
     padding: 10px;
