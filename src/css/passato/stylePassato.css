@@ -31,13 +31,8 @@ a:hover {
     opacity: 0.9;
 }
 /*  Fine    */
-.index{
+.index {
     padding: 10px;
-}
-
-.index .home{
-    width: 40px;
-    float: left;
 }
 
 .index ul{
@@ -173,4 +168,9 @@ footer img {
 footer a {
     text-decoration: none;
     padding: 0;
+}
+
+.index .home {
+    width: 40px;
+    float: left;
 }
