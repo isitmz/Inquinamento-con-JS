@@ -23,6 +23,10 @@ div:not(.imgs) {
     background: rgba(0,0,0,0.3);
 }
 
+a:default {
+    color:azure
+}
+
 a:visited {
     color: azure;
 }
