@@ -13,6 +13,10 @@ body{
 
 /*  Stile generale  */
 
+a:hover {
+    opacity: 0.9;
+}
+
 h1, h2, h3, p{
     margin: 0;
     padding: 0;
