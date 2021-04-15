@@ -6,14 +6,12 @@ html {
 }
 
 body {
-    background: linear-gradient(45deg, #43C6AC,#191654);
+    background-image: url("../../../img/Presente/sfondo.png");
     background-size:cover;
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
-    overflow: hidden;
-    position: fixed;
 }
 
 * {
@@ -27,6 +25,7 @@ h1 {
     color:azure;
     text-transform: uppercase;
     opacity: 0.5;
+    text-align: center;
 }
 
 #paragraph1, #paragraph2, #paragraph3 {
@@ -120,6 +119,7 @@ footer {
     display: flex;
     justify-content: center;
     text-align: center;
+    position: relative;
 }
 
 footer img{
@@ -159,5 +159,13 @@ footer a{
     }
     100% {
         opacity: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .passato, .presente, .futuro {
+        display: block;
+        clear: left;
+        border-radius: 200px 200px 200px 200px;
     }
 }
